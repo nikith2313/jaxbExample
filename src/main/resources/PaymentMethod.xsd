@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.customerShopping.com/customer/paymentMethod" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.customerShopping.com/customer/paymentMethod">
+
+    <complexType name="paymentMethod">
+    	<sequence>
+    		<element name="cardNumber" type="string"></element>
+    		<element name="cardName" type="string"></element>
+    		<element name="dateFrom" type="date"></element>
+    		<element name="dateType" type="date"></element>
+    		<element name="cardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="Creditcard"></enumeration>
+    					<enumeration value="DebitCard"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>

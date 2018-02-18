@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:customer xmlns:tns="http://www.customerShopping.com/customer" xmlns:tns1="http://www.customerShopping.com/customer/address" xmlns:tns2="http://www.customerShopping.com/customer/paymentMethod" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.customerShopping.com/customer Customer.xsd ">
+  <tns:customerId>0</tns:customerId>
+  <tns:name>tns:name</tns:name>
+  <tns:dataOfBirth>2001-01-01</tns:dataOfBirth>
+  <tns:anualSalary>0.0</tns:anualSalary>
+  <tns:address>
+    <tns1:address>tns1:address</tns1:address>
+    <tns1:city>tns1:city</tns1:city>
+    <tns1:country>tns1:country</tns1:country>
+    <tns1:PaymentMethod>
+      <tns2:cardNumber>tns2:cardNumber</tns2:cardNumber>
+      <tns2:cardName>tns2:cardName</tns2:cardName>
+      <tns2:dateFrom>2001-01-01</tns2:dateFrom>
+      <tns2:dateType>2001-01-01</tns2:dateType>
+      <tns2:cardType>Creditcard</tns2:cardType>
+    </tns1:PaymentMethod>
+  </tns:address>
+</tns:customer>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.customerShopping.com/customer" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.customerShopping.com/customer" xmlns:Q1="http://www.customerShopping.com/customer/address">
+
+    <import schemaLocation="Address.xsd" namespace="http://www.customerShopping.com/customer/address"></import>
+    <complexType name="Customer">
+    	<sequence>
+    		<element name="customerId" type="int"></element>
+    		<element name="name" type="string"></element>
+    		<element name="dataOfBirth" type="date"></element>
+    		<element name="anualSalary" type="float"></element>
+    		<element name="address" type="Q1:Address"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="customer" type="tns:Customer"></element>
+</schema>

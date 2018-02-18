@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.customerShopping.com/customer/address" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.customerShopping.com/customer/address" xmlns:Q1="http://www.customerShopping.com/customer/paymentMethod">
+
+    <import schemaLocation="PaymentMethod.xsd" namespace="http://www.customerShopping.com/customer/paymentMethod"></import>
+    <complexType name="Address">
+    	<sequence>
+    		<element name="address" type="string"></element>
+    		<element name="city" type="string"></element>
+    		<element name="country" type="string"></element>
+    		<element name="PaymentMethod" type="Q1:paymentMethod"></element>
+        </sequence>
+    </complexType>
+</schema>
